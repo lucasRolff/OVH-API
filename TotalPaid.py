@@ -18,4 +18,4 @@ for bill in bills:
 for number in amountpaidlist:
     totalbill = float(totalbill) + float(number)
 
-print("You have paid OVH £",totalbill)    
+print("You have paid OVH £",totalbill)
