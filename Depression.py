@@ -11,11 +11,11 @@ print("Hi", client.get('/me')['firstname']) #this is a test of if we are properl
 # Doing fancy things and understanding your bills
 bills = client.get('/me/bill')
 
-for bill in bills:  
+for bill in bills:
     billcost = client.get('/me/bill/' + bill)['priceWithTax']['text'][2:]
     amountpaidlist.append(billcost)
 
 for number in amountpaidlist:
     totalbill = float(totalbill) + float(number)
 
-print("You have paid OVH £",totalbill)
+print("You have paid OVH a total of %s euro" % totalbill)
