@@ -9,7 +9,6 @@ client = ovh.Client(
     application_secret='INSERTAPPLICATIONSECRETHERE', # Application Secret
     consumer_key='INSERTCONSUMERKEYHERE',       # Consumer Key
 )
-#print("Hi", client.get('/me')['firstname']) #this is a test of if we are properly connected to OVH
 
 pops = client.get('/cdn/dedicated/pops')
 
